@@ -9,6 +9,7 @@ const caneta = {
     anoFabricacao: 2022,
     kills: 0,
     refil: 100,
+    vidasSalvas: 0,
     escrever(texto) {
         if (this.refil > 0) {
             console.log(texto);
@@ -81,5 +82,8 @@ Caneta azul tá marcada com minha letra
 Caneta azul, azul caneta
 Caneta azul tá marcada com minha letra 
             `)
+    },
+    traqueostomia() {
+        this.vidasSalvas++;
     }
 }
